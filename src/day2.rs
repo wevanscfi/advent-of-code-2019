@@ -128,13 +128,13 @@ mod tests {
 
     #[test]
     fn first_task() {
-        let mut program = IntCodeProgram::from_file("input.txt".to_string());
+        let mut program = IntCodeProgram::from_file("inputs/day2.txt".to_string());
         assert_eq!(program.noun(12).verb(2).run(),4330636);
     }
     
     #[test]
     fn second_task() {
-        let mut program = IntCodeProgram::from_file("input.txt".to_string());
+        let mut program = IntCodeProgram::from_file("inputs/day2.txt".to_string());
         let (noun,verb) = solve(&mut program, 19690720);
         assert_eq!((noun,verb),(60,86));
     }
