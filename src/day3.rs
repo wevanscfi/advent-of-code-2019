@@ -1,6 +1,5 @@
 use regex::Regex;
 use std::collections::{HashSet};
-use std::env;
 use std::fs;
 
 #[derive(Clone,Eq,PartialEq,Debug,Hash,Copy)]
